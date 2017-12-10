@@ -19,5 +19,8 @@ LazyData: true
 VignetteBuilder: knitr
 Collate:
   'Aus_athletes.R'
+  'US_census.R'
+  'US_regions.R'
+  'women_parliaments.R'
 RoxygenNote: 6.0.1
 Roxygen: list(markdown = TRUE)
