@@ -1,0 +1,23 @@
+Package: dviz.supp
+Title: Supporting materials for Claus Wilke's data visualization book
+Version: 0.1.0
+Authors@R: c(person("Claus O.", "Wilke", role = c("aut", "cre"), email =
+    "wilke@austin.utexas.edu"))
+Description: Supporting materials for Claus Wilke's data visualization book
+URL: https://github.com/clauswilke/dviz.supp
+Depends:
+    R (>= 3.3.0),
+Imports:
+Suggests:
+    ggplot2 (>= 2.2.1),
+    cowplot (>= 0.9.1),
+    dplyr (>= 0.7.4),
+    colorspace (>= 1.4-0),
+    colorblindr (>= 0.1.0)
+License: MIT
+LazyData: true
+VignetteBuilder: knitr
+Collate:
+  'Aus_athletes.R'
+RoxygenNote: 6.0.1
+Roxygen: list(markdown = TRUE)
