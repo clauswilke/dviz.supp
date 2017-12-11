@@ -19,6 +19,8 @@ LazyData: true
 VignetteBuilder: knitr
 Collate:
   'Aus_athletes.R'
+  'happy.R'
+  'themes.R'
   'titanic.R'
   'US_census.R'
   'US_regions.R'

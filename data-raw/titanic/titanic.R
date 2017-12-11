@@ -1,7 +1,6 @@
-library(Stat2Data)
-library(dplyr)
-
 data(Titanic, package = "Stat2Data")
+
+library(dplyr)
 
 Titanic %>%
   select(-SexCode) %>%
