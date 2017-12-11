@@ -3,7 +3,7 @@
 \docType{data}
 \name{women_parliaments}
 \alias{women_parliaments}
-\title{Proportion of seats held by women in national parliaments (percent)}
+\title{Proportion of seats held by women in national parliaments}
 \format{An object of class \code{data.frame} with 4632 rows and 4 columns.}
 \usage{
 women_parliaments
