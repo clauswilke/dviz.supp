@@ -1,10 +1,14 @@
-# File "Titanic.csv" downloaded on 12/10/2017 from 
-# https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/master/csv/datasets/Titanic.csv
-
+library(Stat2Data)
 library(dplyr)
-read.csv("data-raw/titanic/Titanic.csv", stringsAsFactors = FALSE) %>%
-  select(-X, -SexCode) %>%
-  rename(name = Name, class = PClass, age = Age, sex = Sex, survived = Survived) -> titanic_all 
+
+data(Titanic, package = "Stat2Data")
+
+Titanic %>%
+  select(-SexCode) %>%
+  rename(name = Name, class = PClass, age = Age, sex = Sex, survived = Survived) %>%
+  mutate(name = as.character(name),
+         class = as.character(class),
+         sex = as.character(sex)) -> titanic_all 
 devtools::use_data(titanic_all, overwrite = TRUE)
 
 titanic_all %>%

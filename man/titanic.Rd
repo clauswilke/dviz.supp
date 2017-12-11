@@ -6,8 +6,9 @@
 \alias{titanic_all}
 \title{Passenger data from the Titanic}
 \format{The table \code{titanic_all} contains information including name, passenger class, age, sex,
-and whether the passenger survived or not, for 1313 passengers on the Titanic. The table
-\code{titanic} does not contain names and only contains information for passengers with known
+and whether the passenger survived or not, for 1313 passengers on the Titanic.
+
+The table \code{titanic} does not contain names and only contains information for passengers with known
 age, of which there are 756.}
 \usage{
 titanic
@@ -15,6 +16,7 @@ titanic
 titanic_all
 }
 \description{
-Information about surviving and non-surviving passengers on board the Titanic.
+Information about surviving and non-surviving passengers on board the Titanic. This dataset is equivalent
+to \code{Titanic} from the \code{Stat2Data} package.
 }
 \keyword{datasets}

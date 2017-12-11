@@ -1,6 +1,7 @@
 #' Passenger data from the Titanic
 #' 
-#' Information about surviving and non-surviving passengers on board the Titanic.
+#' Information about surviving and non-surviving passengers on board the Titanic. This dataset is equivalent
+#' to `Titanic` from the `Stat2Data` package.
 #' 
 #' @format
 #' The table `titanic_all` contains information including name, passenger class, age, sex,
