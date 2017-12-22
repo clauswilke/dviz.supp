@@ -3,7 +3,7 @@ Title: Supporting materials for Claus Wilke's data visualization book
 Version: 0.1.0
 Authors@R: c(person("Claus O.", "Wilke", role = c("aut", "cre"), email =
     "wilke@austin.utexas.edu"))
-Description: Supporting materials for Claus Wilke's data visualization book
+Description: This package provides supporting materials for Claus Wilke's data visualization book.
 URL: https://github.com/clauswilke/dviz.supp
 Depends:
     R (>= 3.3.0),
@@ -12,14 +12,17 @@ Depends:
 Imports:
 Suggests:
     dplyr (>= 0.7.4),
+    tidyr,
     colorspace (>= 1.4-0),
-    colorblindr (>= 0.1.0)
-License: MIT
+    colorblindr (>= 0.1.0),
+    knitr
+License: MIT + file LICENSE
 LazyData: true
 VignetteBuilder: knitr
 Collate:
   'Aus_athletes.R'
   'happy.R'
+  'palette_plot.R'
   'stamp.R'
   'titanic.R'
   'US_census.R'

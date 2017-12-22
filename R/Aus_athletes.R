@@ -12,12 +12,14 @@
 #' library(colorblindr)
 #' 
 #' male_Aus <- filter(Aus_athletes, sex=="m") %>%
-#'   filter(sport %in% c("basketball", "field", "swimming", "track (400m)", "track (sprint)", "water polo")) %>%
+#'   filter(sport %in% c("basketball", "field", "swimming", "track (400m)",
+#'                       "track (sprint)", "water polo")) %>%
 #'   mutate(sport = case_when(sport == "track (400m)" ~ "track",
 #'                            sport == "track (sprint)" ~ "track",
 #'                            TRUE ~ sport))
 #' 
-#' male_Aus$sport <- factor(male_Aus$sport, levels = c("field", "water polo", "basketball", "swimming", "track"))
+#' male_Aus$sport <- factor(male_Aus$sport,
+#'   levels = c("field", "water polo", "basketball", "swimming", "track"))
 #' 
 #' ggplot(male_Aus, aes(x=height, y=pcBfat, color=sport, fill=sport, shape=sport)) +
 #'   geom_point(size = 3) +

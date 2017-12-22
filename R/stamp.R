@@ -13,6 +13,7 @@
 #'   
 #' stamp_bad(p + guides(color = "none"))
 #' stamp_ugly(p)
+#' @importFrom cowplot ggdraw draw_text draw_line
 #' @export
 stamp <- function(p, color, alpha, label)
 {
