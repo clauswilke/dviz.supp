@@ -25,6 +25,7 @@ Collate:
   'CHIP_tax.R'
   'dviz.supp.R'
   'happy.R'
+  'label_log10.R'
   'marketshare.R'
   'stamp.R'
   'titanic.R'
