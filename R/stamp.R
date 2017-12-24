@@ -24,8 +24,11 @@ stamp <- function(p, color, alpha, label)
 
 #' @rdname stamp
 #' @export
-#stamp_good <- function(p) stamp(p, "olivedrab4", .7, "good")
-stamp_good <- function(p) stamp(p, "transparent", 0, "")
+stamp_good <- function(p) stamp(p, "olivedrab4", .7, "good")
+
+#' @rdname stamp
+#' @export
+stamp_phantom <- function(p) stamp(p, "transparent", 0, "")
 
 #' @rdname stamp
 #' @export

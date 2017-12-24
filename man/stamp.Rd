@@ -3,6 +3,7 @@
 \name{stamp}
 \alias{stamp}
 \alias{stamp_good}
+\alias{stamp_phantom}
 \alias{stamp_bad}
 \alias{stamp_ugly}
 \title{Stamp plots with a label, such as good, bad, or ugly.}
@@ -10,6 +11,8 @@
 stamp(p, color, alpha, label)
 
 stamp_good(p)
+
+stamp_phantom(p)
 
 stamp_bad(p)
 
