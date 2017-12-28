@@ -8,5 +8,25 @@
 #'   geom_point() + 
 #'   scale_x_log10(labels = label_log10) +
 #'   scale_y_log10(labels = label_log10)
+#'   
+#' # the function also works for linear scales
+#' ggplot(US_census, aes(pop2000, pop2010)) + 
+#'   geom_point() + 
+#'   scale_x_continuous(limits = c(-1e6, 1e6), labels = label_log10) +
+#'   scale_y_log10(labels = label_log10)
 #' @export
-label_log10 <- function(x) parse(text = paste0('10^', log10(x)))
+label_log10 <- function(x) {
+  neg <- x < 0
+  zero <- x == 0
+  x[neg] <- -1*x[neg] # remove negative numbers
+  x[zero] <- 1 # remove zeros
+  exp <- floor(log10(x))
+  coef <- signif(x / 10^exp, 2)
+  sign_str <- ifelse(neg, "-", "")
+  zero_str <- ifelse(zero, "0", "")
+  coef_str <- ifelse(coef == 1, "", paste0(coef, " %*% "))
+  exp_str <- ifelse(zero, "", paste0("10^", exp))
+  labels <- paste0(sign_str, zero_str, coef_str, exp_str)
+  
+  parse(text = labels)
+}

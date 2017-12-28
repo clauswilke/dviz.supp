@@ -19,4 +19,10 @@ ggplot(US_census, aes(pop2000, pop2010)) +
   geom_point() + 
   scale_x_log10(labels = label_log10) +
   scale_y_log10(labels = label_log10)
+  
+# the function also works for linear scales
+ggplot(US_census, aes(pop2000, pop2010)) + 
+  geom_point() + 
+  scale_x_continuous(limits = c(-1e6, 1e6), labels = label_log10) +
+  scale_y_log10(labels = label_log10)
 }
