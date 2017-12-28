@@ -31,6 +31,7 @@ Collate:
   'marketshare.R'
   'movie_lengths.R'
   'stamp.R'
+  'tidy_census.R'
   'titanic.R'
   'US_census.R'
   'US_regions.R'
