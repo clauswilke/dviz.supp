@@ -23,6 +23,7 @@ Collate:
   'Aus_athletes.R'
   'bundestag.R'
   'CHIP_tax.R'
+  'cvd_sim.R'
   'dviz.supp.R'
   'dw_nominate.R'
   'flight_delays.R'
