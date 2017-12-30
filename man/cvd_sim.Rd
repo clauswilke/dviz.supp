@@ -6,7 +6,7 @@
 \usage{
 cvd_sim(p, severity = 1, scale = 0.9, hjust = 0, vjust = 1,
   label_x = 0.05, label_y = 0.95, label_size = 12,
-  label_fontface = "bold")
+  label_fontface = "plain")
 }
 \arguments{
 \item{p}{The figure on which to perform the simulation}
@@ -27,6 +27,7 @@ cvd_sim(p, severity = 1, scale = 0.9, hjust = 0, vjust = 1,
 Make combined figure of color-vision deficiency simulations
 }
 \examples{
-cvd_sim(gg_color_gradient(plot_margin = margin(12, 0, 0, 0), ymargin = 0.05) + 
+cvd_sim(gg_color_gradient(plot_margin = margin(12, 0, 0, 0),
+                          ymargin = 0.05) + 
         scale_fill_viridis_c())
 }

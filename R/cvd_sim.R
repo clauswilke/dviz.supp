@@ -16,7 +16,7 @@
 #' @importFrom colorblindr edit_colors
 #' @export
 cvd_sim <- function(p, severity = 1, scale = 0.9, hjust = 0, vjust = 1,
-                    label_x = 0.05, label_y = 0.95, label_size = 12, label_fontface = "bold")
+                    label_x = 0.05, label_y = 0.95, label_size = 12, label_fontface = "plain")
 {
   deut <- function(c) deutan(c, severity)
   p1 <- edit_colors(p, deut)
@@ -28,7 +28,7 @@ cvd_sim <- function(p, severity = 1, scale = 0.9, hjust = 0, vjust = 1,
   p3 <- edit_colors(p, trit)
   
   plot_grid(p, p1, p2, p3, scale = scale, hjust = hjust, vjust = vjust,
-            labels = c("original", "deutanomaly", "protanomaly", "tritanomaly"),
+            labels = c("original", "deuteranomaly", "protanomaly", "tritanomaly"),
             label_x = label_x, label_y = label_y, label_size = label_size,
             label_fontface = label_fontface)
 }
