@@ -28,6 +28,6 @@ prices <- left_join(prices, index_prices) %>%
   group_by(ticker) %>%
   mutate(price_indexed = price/index_price*100)
 
-tech_stock <- prices
+tech_stocks <- prices
 
-devtools::use_data(tech_stock)
+devtools::use_data(tech_stocks)
