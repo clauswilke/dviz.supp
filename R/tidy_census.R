@@ -46,3 +46,15 @@
 #'   theme(legend.title.align = 0.5,
 #'         legend.text.align = 0)
 "texas_race"
+
+#' Median income in Hawaii counties
+#' 
+#' Median income in Hawaii counties for 2010 and 2015, from the 2010 and 2015 five-year American Community Survey.
+#' 
+#' @examples 
+#' hawaii_income_diff <- select(hawaii_income, -median_income_moe) %>%
+#'   spread(year, median_income) %>%
+#'   mutate(income_diff = `2015` - `2010`)
+#' 
+#' ggplot(hawaii_income_diff, aes(county, income_diff)) + geom_col()
+"hawaii_income"

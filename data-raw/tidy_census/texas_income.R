@@ -1,10 +1,7 @@
 library(tidycensus)
 library(tidyverse)
-library(cowplot)
-library(colorspace)
 
 options(tigris_use_cache = TRUE)
-census_api_key("458c6de2dc2470e308c285e4aa64d84a2d5ae3a1")
 
 ##****************
 ## Median income
