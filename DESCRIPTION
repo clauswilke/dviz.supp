@@ -12,7 +12,8 @@ Depends:
     colorblindr (>= 0.1.0),
     dplyr (>= 0.7.4)
 Imports:
-    ggplot2 (>= 2.2.1)
+    ggplot2 (>= 2.2.1),
+    gtable
 Suggests:
     tidyr,
     knitr
@@ -20,6 +21,7 @@ License: MIT + file LICENSE
 LazyData: true
 VignetteBuilder: knitr
 Collate:
+  'align_legend.R'
   'Aus_athletes.R'
   'bundestag.R'
   'CHIP_tax.R'
