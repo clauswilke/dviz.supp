@@ -4,7 +4,7 @@
 \name{US_regions}
 \alias{US_regions}
 \title{US regions and divisions}
-\format{An object of class \code{data.frame} with 51 rows and 3 columns.}
+\format{An object of class \code{data.frame} with 51 rows and 4 columns.}
 \usage{
 US_regions
 }
