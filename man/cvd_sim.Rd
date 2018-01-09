@@ -2,9 +2,14 @@
 % Please edit documentation in R/cvd_sim.R
 \name{cvd_sim}
 \alias{cvd_sim}
+\alias{cvd_sim2}
 \title{Make combined figure of color-vision deficiency simulations}
 \usage{
 cvd_sim(p, severity = 1, scale = 0.9, hjust = 0, vjust = 1,
+  label_x = 0.05, label_y = 0.95, label_size = 12,
+  label_fontface = "plain")
+
+cvd_sim2(p, severity = 1, scale = 0.9, hjust = 0, vjust = 1,
   label_x = 0.05, label_y = 0.95, label_size = 12,
   label_fontface = "plain")
 }
@@ -24,10 +29,15 @@ cvd_sim(p, severity = 1, scale = 0.9, hjust = 0, vjust = 1,
 \item{label_fontface}{The fontface of the labels}
 }
 \description{
-Make combined figure of color-vision deficiency simulations
+The function \code{cvd_sim()} shows the original figure and three color-blind simulated versions. The function \code{cvd_sim2()}
+only shows the color-blind simulated versions and adds a desaturated version also.
 }
 \examples{
-cvd_sim(gg_color_gradient(plot_margin = margin(12, 0, 0, 0),
-                          ymargin = 0.05) + 
-        scale_fill_viridis_c())
+
+viridis_scale <- gg_color_gradient(plot_margin = margin(12, 0, 0, 0),
+                                   ymargin = 0.05) + 
+                   scale_fill_viridis_c()
+
+cvd_sim(viridis_scale)
+cvd_sim2(viridis_scale)
 }

@@ -2,6 +2,7 @@
 
 export(align_legend)
 export(cvd_sim)
+export(cvd_sim2)
 export(label_log10)
 export(stamp)
 export(stamp_bad)
