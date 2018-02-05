@@ -1,0 +1,178 @@
+2016 Rank	Country	2016 Score	2015 Score	2014 Score	2013 Score	2012 Score	Region
+1	Denmark	90	91	92	91	90	Europe and Central Asia
+1	New Zealand	90	91	91	91	90	Asia Pacific
+3	Finland	89	90	89	89	90	Europe and Central Asia
+4	Sweden	88	89	87	89	88	Europe and Central Asia
+5	Switzerland	86	86	86	85	86	Europe and Central Asia
+6	Norway	85	88	86	86	85	Europe and Central Asia
+7	Singapore	84	85	84	86	87	Asia Pacific
+8	Netherlands	83	84	83	83	84	Europe and Central Asia
+9	Canada	82	83	81	81	84	Americas
+10	Germany	81	81	79	78	79	Europe and Central Asia
+10	Luxembourg	81	85	82	80	80	Europe and Central Asia
+10	United Kingdom	81	81	78	76	74	Europe and Central Asia
+13	Australia	79	79	80	81	85	Asia Pacific
+14	Iceland	78	79	79	78	82	Europe and Central Asia
+15	Belgium	77	77	76	75	75	Europe and Central Asia
+15	Hong Kong	77	75	74	75	77	Asia Pacific
+17	Austria	75	76	72	69	69	Europe and Central Asia
+18	United States	74	76	74	73	73	Americas
+19	Ireland	73	75	74	72	69	Europe and Central Asia
+20	Japan	72	75	76	74	74	Asia Pacific
+21	Uruguay	71	74	73	73	72	Americas
+22	Estonia	70	70	69	68	64	Europe and Central Asia
+23	France	69	70	69	71	71	Europe and Central Asia
+24	Bahamas	66	N/A	71	71	71	Americas
+24	Chile	66	70	73	71	72	Americas
+24	United Arab Emirates	66	70	70	69	68	Middle East and North Africa
+27	Bhutan	65	65	65	63	63	Asia Pacific
+28	Israel	64	61	60	61	60	Middle East and North Africa
+29	Poland	62	63	61	60	58	Europe and Central Asia
+29	Portugal	62	64	63	62	63	Europe and Central Asia
+31	Barbados	61	N/A	74	75	76	Americas
+31	Qatar	61	71	69	68	68	Middle East and North Africa
+31	Slovenia	61	60	58	57	61	Europe and Central Asia
+31	Taiwan	61	62	61	61	61	Asia Pacific
+35	Botswana	60	63	63	64	65	Sub Saharan Africa
+35	Saint Lucia	60	N/A	71	71	71	Americas
+35	Saint Vincent and the Grenadines	60	N/A	62	62	62	Americas
+38	Cape Verde	59	55	57	58	60	Sub Saharan Africa
+38	Dominica	59	N/A	58	58	58	Americas
+38	Lithuania	59	59	58	57	54	Europe and Central Asia
+41	Brunei	58	N/A	N/A	60	55	Asia Pacific
+41	Costa Rica	58	55	54	53	54	Americas
+41	Spain	58	58	60	59	65	Europe and Central Asia
+44	Georgia	57	52	52	49	52	Europe and Central Asia
+44	Latvia	57	56	55	53	49	Europe and Central Asia
+46	Grenada	56	N/A	N/A	N/A	N/A	Americas
+47	Cyprus	55	61	63	63	66	Europe and Central Asia
+47	Czech Republic	55	56	51	48	49	Europe and Central Asia
+47	Malta	55	60	55	56	57	Europe and Central Asia
+50	Mauritius	54	53	54	52	57	Sub Saharan Africa
+50	Rwanda	54	54	49	53	53	Sub Saharan Africa
+52	Korea (South)	53	54	55	55	56	Asia Pacific
+53	Namibia	52	53	49	48	48	Sub Saharan Africa
+54	Slovakia	51	51	50	47	46	Europe and Central Asia
+55	Croatia	49	51	48	48	46	Europe and Central Asia
+55	Malaysia	49	50	52	50	49	Asia Pacific
+57	Hungary	48	51	54	54	55	Europe and Central Asia
+57	Jordan	48	53	49	45	48	Middle East and North Africa
+57	Romania	48	46	43	43	44	Europe and Central Asia
+60	Cuba	47	47	46	46	48	Americas
+60	Italy	47	44	43	43	42	Europe and Central Asia
+62	Sao Tome and Principe	46	42	42	42	42	Sub Saharan Africa
+62	Saudi Arabia	46	52	49	46	44	Middle East and North Africa
+64	Montenegro	45	44	42	44	41	Europe and Central Asia
+64	Oman	45	45	45	47	47	Middle East and North Africa
+64	Senegal	45	44	43	41	36	Sub Saharan Africa
+64	South Africa	45	44	44	42	43	Sub Saharan Africa
+64	Suriname	45	36	36	36	37	Americas
+69	Greece	44	46	43	40	36	Europe and Central Asia
+70	Bahrain	43	51	49	48	51	Middle East and North Africa
+70	Ghana	43	47	48	46	45	Sub Saharan Africa
+72	Burkina Faso	42	38	38	38	38	Sub Saharan Africa
+72	Serbia	42	40	41	42	39	Europe and Central Asia
+72	Solomon Islands	42	N/A	N/A	N/A	N/A	Asia Pacific
+75	Bulgaria	41	41	43	41	41	Europe and Central Asia
+75	Kuwait	41	49	44	43	44	Middle East and North Africa
+75	Tunisia	41	38	40	41	41	Middle East and North Africa
+75	Turkey	41	42	45	50	49	Europe and Central Asia
+79	Belarus	40	32	31	29	31	Europe and Central Asia
+79	Brazil	40	38	43	42	43	Americas
+79	China	40	37	36	40	39	Asia Pacific
+79	India	40	38	38	36	36	Asia Pacific
+83	Albania	39	36	33	31	33	Europe and Central Asia
+83	Bosnia and Herzegovina	39	38	39	42	42	Europe and Central Asia
+83	Jamaica	39	41	38	38	38	Americas
+83	Lesotho	39	44	49	49	45	Sub Saharan Africa
+87	Mongolia	38	39	39	38	36	Asia Pacific
+87	Panama	38	39	37	35	38	Americas
+87	Zambia	38	38	38	38	37	Sub Saharan Africa
+90	Colombia	37	37	37	36	36	Americas
+90	Indonesia	37	36	34	32	32	Asia Pacific
+90	Liberia	37	37	37	38	41	Sub Saharan Africa
+90	Morocco	37	36	39	37	37	Middle East and North Africa
+90	The FYR of Macedonia	37	42	45	44	43	Europe and Central Asia
+95	Argentina	36	32	34	34	35	Americas
+95	Benin	36	37	39	36	36	Sub Saharan Africa
+95	El Salvador	36	39	39	38	38	Americas
+95	Kosovo	36	33	33	33	34	Europe and Central Asia
+95	Maldives	36	N/A	N/A	N/A	N/A	Asia Pacific
+95	Sri Lanka	36	37	38	37	40	Asia Pacific
+101	Gabon	35	34	37	34	35	Sub Saharan Africa
+101	Niger	35	34	35	34	33	Sub Saharan Africa
+101	Peru	35	36	38	38	38	Americas
+101	Philippines	35	35	38	36	34	Asia Pacific
+101	Thailand	35	38	38	35	37	Asia Pacific
+101	Timor-Leste	35	28	28	30	33	Asia Pacific
+101	Trinidad and Tobago	35	39	38	38	39	Americas
+108	Algeria	34	36	36	36	34	Middle East and North Africa
+108	Côte d´Ivoire	34	32	32	27	29	Sub Saharan Africa
+108	Egypt	34	36	37	32	32	Middle East and North Africa
+108	Ethiopia	34	33	33	33	33	Sub Saharan Africa
+108	Guyana	34	29	30	27	28	Americas
+113	Armenia	33	35	37	36	34	Europe and Central Asia
+113	Bolivia	33	34	35	34	34	Americas
+113	Vietnam	33	31	31	31	31	Asia Pacific
+116	Mali	32	35	32	28	34	Sub Saharan Africa
+116	Pakistan	32	30	29	28	27	Asia Pacific
+116	Tanzania	32	30	31	33	35	Sub Saharan Africa
+116	Togo	32	32	29	29	30	Sub Saharan Africa
+120	Dominican Republic	31	33	32	29	32	Americas
+120	Ecuador	31	32	33	35	32	Americas
+120	Malawi	31	31	33	37	37	Sub Saharan Africa
+123	Azerbaijan	30	29	29	28	27	Europe and Central Asia
+123	Djibouti	30	34	34	36	36	Sub Saharan Africa
+123	Honduras	30	31	29	26	28	Americas
+123	Laos	30	25	25	26	21	Asia Pacific
+123	Mexico	30	31	35	34	34	Americas
+123	Moldova	30	33	35	35	36	Europe and Central Asia
+123	Paraguay	30	27	24	24	25	Americas
+123	Sierra Leone	30	29	31	30	31	Sub Saharan Africa
+131	Iran	29	27	27	25	28	Middle East and North Africa
+131	Kazakhstan	29	28	29	26	28	Europe and Central Asia
+131	Nepal	29	27	29	31	27	Asia Pacific
+131	Russia	29	29	27	28	28	Europe and Central Asia
+131	Ukraine	29	27	26	25	26	Europe and Central Asia
+136	Guatemala	28	28	32	29	33	Americas
+136	Kyrgyzstan	28	28	27	24	24	Europe and Central Asia
+136	Lebanon	28	28	27	28	30	Middle East and North Africa
+136	Myanmar	28	22	21	21	15	Asia Pacific
+136	Nigeria	28	26	27	25	27	Sub Saharan Africa
+136	Papua New Guinea	28	25	25	25	25	Asia Pacific
+142	Guinea	27	25	25	24	24	Sub Saharan Africa
+142	Mauritania	27	31	30	30	31	Middle East and North Africa
+142	Mozambique	27	31	31	30	31	Sub Saharan Africa
+145	Bangladesh	26	25	25	27	26	Asia Pacific
+145	Cameroon	26	27	27	25	26	Sub Saharan Africa
+145	Gambia	26	28	29	28	34	Sub Saharan Africa
+145	Kenya	26	25	25	27	27	Sub Saharan Africa
+145	Madagascar	26	28	28	28	32	Sub Saharan Africa
+145	Nicaragua	26	27	28	28	29	Americas
+151	Tajikistan	25	26	23	22	22	Europe and Central Asia
+151	Uganda	25	25	26	26	29	Sub Saharan Africa
+153	Comoros	24	26	26	28	28	Sub Saharan Africa
+154	Turkmenistan	22	18	17	17	17	Europe and Central Asia
+154	Zimbabwe	22	21	21	21	20	Sub Saharan Africa
+156	Cambodia	21	21	21	20	22	Asia Pacific
+156	Democratic Republic of Congo	21	22	22	22	21	Sub Saharan Africa
+156	Uzbekistan	21	19	18	17	17	Europe and Central Asia
+159	Burundi	20	21	20	21	19	Sub Saharan Africa
+159	Central African Republic	20	24	24	25	26	Sub Saharan Africa
+159	Chad	20	22	22	19	19	Sub Saharan Africa
+159	Haiti	20	17	19	19	19	Americas
+159	Republic of Congo	20	23	23	22	26	Sub Saharan Africa
+164	Angola	18	15	19	23	22	Sub Saharan Africa
+164	Eritrea	18	18	18	20	25	Sub Saharan Africa
+166	Iraq	17	16	16	16	18	Middle East and North Africa
+166	Venezuela	17	17	19	20	19	Americas
+168	Guinea-Bissau	16	17	19	19	25	Sub Saharan Africa
+169	Afghanistan	15	11	12	8	8	Asia Pacific
+170	Libya	14	16	18	15	21	Middle East and North Africa
+170	Sudan	14	12	11	11	13	Middle East and North Africa
+170	Yemen	14	18	19	18	23	Middle East and North Africa
+173	Syria	13	18	20	17	26	Middle East and North Africa
+174	Korea (North)	12	8	8	8	8	Asia Pacific
+175	South Sudan	11	15	15	14	N/A	Sub Saharan Africa
+176	Somalia	10	8	8	8	8	Sub Saharan Africa
+
