@@ -19,7 +19,7 @@ library(ggplot2)
 corruption \%>\% filter(year == 2015) \%>\% na.omit() \%>\%
   ggplot(aes(cpi, hdi)) + geom_point(aes(color = region)) + 
   geom_smooth(method = 'lm', formula = y~log(x), se = FALSE) +
-  scale_color_OkabeIto(name = "NULL") +
+  scale_color_OkabeIto(name = NULL) +
   theme_minimal_hgrid() +
   theme(legend.position = "top")
 }
