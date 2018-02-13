@@ -32,6 +32,7 @@ Collate:
   'flight_delays.R'
   'happy.R'
   'income_by_age.R'
+  'internet.R'
   'label_log10.R'
   'marketshare.R'
   'movie_lengths.R'
