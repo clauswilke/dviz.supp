@@ -37,6 +37,7 @@ Collate:
   'marketshare.R'
   'movie_lengths.R'
   'ncdc_normals.R'
+  'pad_figure.R'
   'stamp.R'
   'tech_stocks.R'
   'tidy_census.R'
