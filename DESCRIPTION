@@ -34,6 +34,7 @@ Collate:
   'income_by_age.R'
   'internet.R'
   'label_log10.R'
+  'legosets.R'
   'marketshare.R'
   'movie_lengths.R'
   'ncdc_normals.R'

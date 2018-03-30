@@ -4,7 +4,14 @@
 \alias{pad_figure}
 \title{Pad figure}
 \usage{
-pad_figure(p, fig.width = 5.5, page.width = 8.5, unit = "in")
+pad_figure(p, fig.width = 6, page.width = 8.5, unit = "in")
+}
+\arguments{
+\item{fig.width}{The width of the figure}
+
+\item{page.width}{The width of the enclosing page}
+
+\item{unit}{Unit of measurement for \code{fig.width} and \code{page.width}.}
 }
 \description{
 Place whitespace to left and right of figure so that the figure spans the entire page width.
