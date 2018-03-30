@@ -5,12 +5,16 @@
 \alias{tech_stocks}
 \title{Stock prices of four major tech companies}
 \format{An object of class \code{grouped_df} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 9569 rows and 6 columns.}
+\source{
+\url{finance.yahoo.com}
+}
 \usage{
 tech_stocks
 }
 \description{
 This dataset contains several years of daily closing prices for four major
-tech companies, Apple, Google, Microsoft, and Facebook.
+tech companies, Apple, Google, Microsoft, and Facebook. Data was downloaded
+from Yahoo finance.
 }
 \examples{
 ggplot(tech_stocks, aes(x=date, y=price_indexed, color=ticker)) +

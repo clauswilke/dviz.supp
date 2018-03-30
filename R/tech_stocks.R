@@ -1,8 +1,11 @@
 #' Stock prices of four major tech companies
 #' 
 #' This dataset contains several years of daily closing prices for four major
-#' tech companies, Apple, Google, Microsoft, and Facebook.
+#' tech companies, Apple, Google, Microsoft, and Facebook. Data was downloaded
+#' from Yahoo finance.
 #' 
+#' @source
+#' \url{finance.yahoo.com}
 #' @examples 
 #' ggplot(tech_stocks, aes(x=date, y=price_indexed, color=ticker)) +
 #'   geom_line() +
