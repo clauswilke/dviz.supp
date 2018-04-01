@@ -26,6 +26,7 @@ Collate:
   'bundestag.R'
   'CHIP_tax.R'
   'corruption.R'
+  'cows.R'
   'cvd_sim.R'
   'dviz.supp.R'
   'dw_nominate.R'
