@@ -6,6 +6,9 @@ library(stringr)
 library(lubridate)
 library(here)
 
+
+# data downloaded from Yahoo Finance, finance.yahoo.com, in early June 2017
+
 stocks <- data_frame(company = c("Alphabet", "Apple", "Facebook", "Microsoft"),
                      ticker = c("GOOG", "AAPL", "FB", "MSFT"))
 
