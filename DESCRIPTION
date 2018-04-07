@@ -23,6 +23,7 @@ VignetteBuilder: knitr
 Collate:
   'align_legend.R'
   'Aus_athletes.R'
+  'BA_degrees.R'
   'bundestag.R'
   'CHIP_tax.R'
   'corruption.R'
