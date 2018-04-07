@@ -44,6 +44,7 @@ Collate:
   'preprint_growth.R'
   'stamp.R'
   'tech_stocks.R'
+  'themes.R'
   'tidy_census.R'
   'titanic.R'
   'US_census.R'

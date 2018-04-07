@@ -8,7 +8,7 @@
 \alias{stamp_ugly}
 \title{Stamp plots with a label, such as good, bad, or ugly.}
 \usage{
-stamp(p, color, alpha, label)
+stamp(p, color, alpha, label, family = "Myriad Pro", fontface = "plain")
 
 stamp_good(p)
 
@@ -26,6 +26,10 @@ stamp_ugly(p)
 \item{alpha}{Transparency level of the stamp}
 
 \item{label}{The text label used for the stamp}
+
+\item{family}{Font family}
+
+\item{fontface}{Font face}
 }
 \description{
 Stamp plots with a label, such as good, bad, or ugly.
