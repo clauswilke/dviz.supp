@@ -18,3 +18,7 @@ NULL
   # switch the cowplot null device
   cowplot::set_null_device("png")
 }
+
+#' @usage NULL
+#' @export
+dviz_font_family <- "Myriad Pro"

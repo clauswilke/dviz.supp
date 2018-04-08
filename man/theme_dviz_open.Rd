@@ -5,23 +5,28 @@
 \alias{theme_dviz_grid}
 \alias{theme_dviz_hgrid}
 \alias{theme_dviz_vgrid}
+\alias{theme_dviz_map}
 \title{Themes for data viz book}
 \usage{
-theme_dviz_open(font_size = 14, font_family = "Myriad Pro",
+theme_dviz_open(font_size = 14, font_family = dviz_font_family,
   line_size = 0.5, rel_small = 12/14, rel_tiny = 11/14,
   rel_large = 16/14)
 
-theme_dviz_grid(font_size = 14, font_family = "Myriad Pro",
+theme_dviz_grid(font_size = 14, font_family = dviz_font_family,
   line_size = 0.5, rel_small = 12/14, rel_tiny = 11/14,
   rel_large = 16/14, color = "grey90")
 
-theme_dviz_hgrid(font_size = 14, font_family = "Myriad Pro",
+theme_dviz_hgrid(font_size = 14, font_family = dviz_font_family,
   line_size = 0.5, rel_small = 12/14, rel_tiny = 11/14,
   rel_large = 16/14, color = "grey90")
 
-theme_dviz_vgrid(font_size = 14, font_family = "Myriad Pro",
+theme_dviz_vgrid(font_size = 14, font_family = dviz_font_family,
   line_size = 0.5, rel_small = 12/14, rel_tiny = 11/14,
   rel_large = 16/14, color = "grey90")
+
+theme_dviz_map(font_size = 14, font_family = dviz_font_family,
+  line_size = 0.5, rel_small = 12/14, rel_tiny = 11/14,
+  rel_large = 16/14)
 }
 \arguments{
 \item{font_size}{Overall font size}
@@ -37,9 +42,9 @@ theme_dviz_vgrid(font_size = 14, font_family = "Myriad Pro",
 \item{rel_large}{Relative size of large text (e.g., title)}
 
 \item{color}{Color of grid lines}
-
-\item{color}{Color of grid lines}
 }
 \description{
-Themes for data viz book
+The themes used in the data visualization book. The default font for these
+themes is Myriad Pro, which needs to be installed on the target system for
+these themes to work.
 }
