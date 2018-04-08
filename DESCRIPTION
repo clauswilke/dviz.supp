@@ -41,6 +41,7 @@ Collate:
   'movie_lengths.R'
   'ncdc_normals.R'
   'pad_figure.R'
+  'plot_grid.R'
   'preprint_growth.R'
   'stamp.R'
   'tech_stocks.R'
