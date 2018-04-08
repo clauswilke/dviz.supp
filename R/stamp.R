@@ -20,7 +20,7 @@
 stamp <- function(p, color, alpha, label, family = "Myriad Pro", fontface = "plain")
 {
   ggdraw(p) +
-    draw_text(paste0(label, " "), x=1, y=1, vjust=1, hjust=1, size=16, angle = 0,
+    draw_text(paste0(label, "  "), x=1, y=1, vjust=1.1, hjust=1, size=16, angle = 0,
               color=color, alpha=alpha, family = family, fontface = fontface) +
     draw_line(c(1, 1), c(0, 1), size=2.8, color=color, alpha=alpha)
 }
