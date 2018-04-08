@@ -18,8 +18,7 @@ theme_dviz_open <- function(font_size = 14, font_family = dviz_font_family, line
   cowplot::theme_half_open(font_size = font_size, font_family = font_family, line_size = line_size,
                            rel_small = rel_small, rel_tiny = rel_tiny, rel_large = rel_large)  %+replace%
     theme(
-      #plot.margin = margin(half_line, 0, half_line, 0),
-      plot.margin = margin(2, 0, 2, 0),
+      plot.margin = margin(half_line/2, 0, half_line/2, 0),
       complete = TRUE
     )
 }
@@ -36,8 +35,7 @@ theme_dviz_grid <- function(font_size = 14, font_family = dviz_font_family, line
                               rel_small = rel_small, rel_tiny = rel_tiny, rel_large = rel_large,
                               color = color)  %+replace%
     theme(
-      #plot.margin = margin(half_line, 0, half_line, 0),
-      plot.margin = margin(2, 0, 2, 0),
+      plot.margin = margin(half_line/2, 0, half_line/2, 0),
       complete = TRUE
     )
 }
@@ -53,8 +51,7 @@ theme_dviz_hgrid <- function(font_size = 14, font_family = dviz_font_family, lin
                               rel_small = rel_small, rel_tiny = rel_tiny, rel_large = rel_large,
                               color = color)  %+replace%
     theme(
-      #plot.margin = margin(half_line, 0, half_line, 0),
-      plot.margin = margin(2, 0, 2, 0),
+      plot.margin = margin(half_line/2, 0, half_line/2, 0),
       complete = TRUE
     )
 }
@@ -70,8 +67,7 @@ theme_dviz_vgrid <- function(font_size = 14, font_family = dviz_font_family, lin
                               rel_small = rel_small, rel_tiny = rel_tiny, rel_large = rel_large,
                               color = color)  %+replace%
     theme(
-      #plot.margin = margin(half_line, 0, half_line, 0),
-      plot.margin = margin(2, 0, 2, 0),
+      plot.margin = margin(half_line/2, 0, half_line/2, 0),
       complete = TRUE
     )
 }
@@ -85,8 +81,7 @@ theme_dviz_map <- function(font_size = 14, font_family = dviz_font_family, line_
   cowplot::theme_map(font_size = font_size, font_family = font_family, line_size = line_size,
                            rel_small = rel_small, rel_tiny = rel_tiny, rel_large = rel_large)  %+replace%
     theme(
-      #plot.margin = margin(half_line, 0, half_line, 0),
-      plot.margin = margin(2, 0, 2, 0),
+      plot.margin = margin(half_line/2, 0, half_line/2, 0),
       complete = TRUE
     )
 }
