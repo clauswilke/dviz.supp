@@ -17,7 +17,7 @@
 #' stamp_ugly(p)
 #' @importFrom cowplot ggdraw draw_text draw_line
 #' @export
-stamp <- function(p, color, alpha, label, family = "Myriad Pro", fontface = "plain")
+stamp <- function(p, color, alpha, label, family = dviz_font_family_bold, fontface = "plain")
 {
   ggdraw(p) +
     draw_text(paste0(label, "  "), x=1, y=1, vjust=1.1, hjust=1, size=16, angle = 0,

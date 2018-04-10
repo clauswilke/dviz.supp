@@ -22,3 +22,15 @@ NULL
 #' @usage NULL
 #' @export
 dviz_font_family <- "Myriad Pro"
+
+#' @usage NULL
+#' @export
+dviz_font_family_bold <- "Myriad Pro Semibold"
+
+#' @usage NULL
+#' @export
+dviz_font_family_condensed <- "Myriad Pro Condensed"
+
+#' @usage NULL
+#' @export
+dviz_font_family_bold_condensed <- "Myriad Pro Bold Condensed"

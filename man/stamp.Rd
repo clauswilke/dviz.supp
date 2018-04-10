@@ -8,7 +8,8 @@
 \alias{stamp_ugly}
 \title{Stamp plots with a label, such as good, bad, or ugly.}
 \usage{
-stamp(p, color, alpha, label, family = "Myriad Pro", fontface = "plain")
+stamp(p, color, alpha, label, family = dviz_font_family_bold,
+  fontface = "plain")
 
 stamp_good(p)
 
