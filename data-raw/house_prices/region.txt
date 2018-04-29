@@ -1,0 +1,52 @@
+fips	statecode	statename	division	region
+09	CT	Connecticut	New England Division	Northeast Region
+23	ME	Maine	New England Division	Northeast Region
+25	MA	Massachusetts	New England Division	Northeast Region
+33	NH	New Hampshire	New England Division	Northeast Region
+44	RI	Rhode Island	New England Division	Northeast Region
+50	VT	Vermont	New England Division	Northeast Region
+34	NJ	New Jersey	Middle Atlantic Division	Northeast Region
+36	NY	New York	Middle Atlantic Division	Northeast Region
+42	PA	Pennsylvania	Middle Atlantic Division	Northeast Region
+17	IL	Illinois	East North Central Division	Midwest Region
+18	IN	Indiana	East North Central Division	Midwest Region
+26	MI	Michigan	East North Central Division	Midwest Region
+39	OH	Ohio	East North Central Division	Midwest Region
+55	WI	Wisconsin	East North Central Division	Midwest Region
+19	IA	Iowa	West North Central Division	Midwest Region
+20	KS	Kansas	West North Central Division	Midwest Region
+27	MN	Minnesota	West North Central Division	Midwest Region
+29	MO	Missouri	West North Central Division	Midwest Region
+31	NE	Nebraska	West North Central Division	Midwest Region
+38	ND	North Dakota	West North Central Division	Midwest Region
+46	SD	South Dakota	West North Central Division	Midwest Region
+10	DE	Delaware	South Atlantic Division	South Region
+11	DC	District of Columbia	South Atlantic Division	South Region
+12	FL	Florida	South Atlantic Division	South Region
+13	GA	Georgia	South Atlantic Division	South Region
+24	MD	Maryland	South Atlantic Division	South Region
+37	NC	North Carolina	South Atlantic Division	South Region
+45	SC	South Carolina	South Atlantic Division	South Region
+51	VA	Virginia	South Atlantic Division	South Region
+54	WV	West Virginia	South Atlantic Division	South Region
+01	AL	Alabama	East South Central Division	South Region
+21	KY	Kentucky	East South Central Division	South Region
+28	MS	Mississippi	East South Central Division	South Region
+47	TN	Tennessee	East South Central Division	South Region
+05	AR	Arkansas	West South Central Division	South Region
+22	LA	Louisiana	West South Central Division	South Region
+40	OK	Oklahoma	West South Central Division	South Region
+48	TX	Texas	West South Central Division	South Region
+04	AZ	Arizona	Mountain Division	West Region
+08	CO	Colorado	Mountain Division	West Region
+16	ID	Idaho	Mountain Division	West Region
+30	MT	Montana	Mountain Division	West Region
+32	NV	Nevada	Mountain Division	West Region
+35	NM	New Mexico	Mountain Division	West Region
+49	UT	Utah	Mountain Division	West Region
+56	WY	Wyoming	Mountain Division	West Region
+02	AK	Alaska	Pacific Division	West Region
+06	CA	California	Pacific Division	West Region
+15	HI	Hawaii	Pacific Division	West Region
+41	OR	Oregon	Pacific Division	West Region
+53	WA	Washington	Pacific Division	West Region

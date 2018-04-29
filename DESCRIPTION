@@ -33,6 +33,7 @@ Collate:
   'dw_nominate.R'
   'flight_delays.R'
   'happy.R'
+  'house_prices.R'
   'income_by_age.R'
   'internet.R'
   'label_log10.R'
@@ -51,5 +52,5 @@ Collate:
   'US_census.R'
   'US_regions.R'
   'women_parliaments.R'
-RoxygenNote: 6.0.1
+RoxygenNote: 6.0.1.9000
 Roxygen: list(markdown = TRUE)

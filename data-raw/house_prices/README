@@ -1,0 +1,12 @@
+Materials taken from/inspired by http://lenkiefer.com/2017/08/07/house-price-trends/
+
+Data source for house price index: Freddie Mac
+Data source for unemployment: U.S. Bureau of Labor Statistics
+
+Files downloaded on 2018/04/28 from these URLs:
+http://www.freddiemac.com/research/docs/states.xls
+http://lenkiefer.com/img/charts_feb_20_2017/region.txt
+https://download.bls.gov/pub/time.series/la/la.data.1.CurrentS
+https://download.bls.gov/pub/time.series/la/la.series
+https://download.bls.gov/pub/time.series/la/la.area
+https://download.bls.gov/pub/time.series/la/la.txt
