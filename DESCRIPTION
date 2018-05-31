@@ -33,6 +33,7 @@ Collate:
   'dviz.supp.R'
   'dw_nominate.R'
   'flight_delays.R'
+  'forensic_glass.R'
   'happy.R'
   'house_prices.R'
   'income_by_age.R'
