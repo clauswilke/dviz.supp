@@ -24,16 +24,16 @@ theme_dviz_open <- function(font_size = 14, font_family = dviz_font_family, line
 }
 
 #' @rdname theme_dviz_open
-#' @param color Color of grid lines
+#' @param colour Color of grid lines
 #' @export
 theme_dviz_grid <- function(font_size = 14, font_family = dviz_font_family, line_size = .5,
                             rel_small = 12/14, rel_tiny = 11/14, rel_large = 16/14,
-                            color = "grey90") {
+                            colour = "grey90") {
   half_line <- font_size / 2
   
   cowplot::theme_minimal_grid(font_size = font_size, font_family = font_family, line_size = line_size,
                               rel_small = rel_small, rel_tiny = rel_tiny, rel_large = rel_large,
-                              color = color)  %+replace%
+                              colour = colour)  %+replace%
     theme(
       plot.margin = margin(half_line/2, 0, half_line/2, 0),
       complete = TRUE
@@ -44,12 +44,12 @@ theme_dviz_grid <- function(font_size = 14, font_family = dviz_font_family, line
 #' @export
 theme_dviz_hgrid <- function(font_size = 14, font_family = dviz_font_family, line_size = .5,
                             rel_small = 12/14, rel_tiny = 11/14, rel_large = 16/14,
-                            color = "grey90") {
+                            colour = "grey90") {
   half_line <- font_size / 2
   
   cowplot::theme_minimal_hgrid(font_size = font_size, font_family = font_family, line_size = line_size,
                               rel_small = rel_small, rel_tiny = rel_tiny, rel_large = rel_large,
-                              color = color)  %+replace%
+                              colour = colour)  %+replace%
     theme(
       plot.margin = margin(half_line/2, 0, half_line/2, 0),
       complete = TRUE
@@ -60,12 +60,12 @@ theme_dviz_hgrid <- function(font_size = 14, font_family = dviz_font_family, lin
 #' @export
 theme_dviz_vgrid <- function(font_size = 14, font_family = dviz_font_family, line_size = .5,
                             rel_small = 12/14, rel_tiny = 11/14, rel_large = 16/14,
-                            color = "grey90") {
+                            colour = "grey90") {
   half_line <- font_size / 2
   
   cowplot::theme_minimal_vgrid(font_size = font_size, font_family = font_family, line_size = line_size,
                               rel_small = rel_small, rel_tiny = rel_tiny, rel_large = rel_large,
-                              color = color)  %+replace%
+                              colour = colour)  %+replace%
     theme(
       plot.margin = margin(half_line/2, 0, half_line/2, 0),
       complete = TRUE
