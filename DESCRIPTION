@@ -27,6 +27,7 @@ Collate:
   'blue_jays.R'
   'bundestag.R'
   'CHIP_tax.R'
+  'correlation_examples.R'
   'corruption.R'
   'cows.R'
   'cvd_sim.R'
