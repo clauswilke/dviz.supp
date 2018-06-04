@@ -28,6 +28,7 @@ Data columns:
 }
 }
 \examples{
+library(lubridate)
 ggplot(filter(house_prices, state == "California", year(date) > 2000),
        aes(unemploy_perc, house_price_perc)) + geom_path()
 }

@@ -16,6 +16,7 @@
 #' Unemployment: \url{https://download.bls.gov/pub/time.series/la/la.txt}
 #' 
 #' @examples
+#' library(lubridate)
 #' ggplot(filter(house_prices, state == "California", year(date) > 2000),
 #'        aes(unemploy_perc, house_price_perc)) + geom_path()
 "house_prices"
