@@ -44,6 +44,7 @@ Collate:
   'label_log10.R'
   'legosets.R'
   'marketshare.R'
+  'Moby_Dick.R'
   'movie_lengths.R'
   'ncdc_normals.R'
   'pad_figure.R'
