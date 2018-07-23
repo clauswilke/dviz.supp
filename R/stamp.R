@@ -6,6 +6,7 @@
 #' @param label The text label used for the stamp
 #' @param family Font family
 #' @param fontface Font face
+#' @param clip Should figure be clipped (default is "on")
 #' @examples
 #' library(ggplot2)
 #' 
@@ -17,9 +18,10 @@
 #' stamp_ugly(p)
 #' @importFrom cowplot ggdraw draw_text draw_line
 #' @export
-stamp <- function(p, color, alpha, label, family = dviz_font_family_bold, fontface = "plain")
+stamp <- function(p, color, alpha, label, family = dviz_font_family_bold,
+                  fontface = "plain", clip = "on")
 {
-  ggdraw(p) +
+  ggdraw(p, clip = clip) +
     draw_text(paste0(label, "  "), x=1, y=1, vjust=1.1, hjust=1, size=16, angle = 0,
               color=color, alpha=alpha, family = family, fontface = fontface) +
     draw_line(c(1, 1), c(0, 1), size=2.8, color=color, alpha=alpha)
@@ -27,17 +29,20 @@ stamp <- function(p, color, alpha, label, family = dviz_font_family_bold, fontfa
 
 #' @rdname stamp
 #' @export
-stamp_good <- function(p) stamp(p, "olivedrab4", .7, "good")
+stamp_good <- function(p, clip = "on") stamp(p, "olivedrab4", .7, "good", clip = clip)
 
 #' @rdname stamp
 #' @export
-stamp_phantom <- function(p) stamp(p, "transparent", 0, "")
+stamp_phantom <- function(p, clip = "on") stamp(p, "transparent", 0, "", clip = clip)
 
 #' @rdname stamp
 #' @export
-stamp_bad <- function(p) stamp(p, "#d02138", 1, "bad")
-
+stamp_bad <- function(p, clip = "on") stamp(p, "#d02138", 1, "bad", clip = clip)
 
 #' @rdname stamp
 #' @export
-stamp_ugly <- function(p) stamp(p, "#DC9515", 1, "ugly")
+stamp_wrong <- function(p, clip = "on") stamp(p, "#d02138", 1, "wrong", clip = clip)
+
+#' @rdname stamp
+#' @export
+stamp_ugly <- function(p, clip = "on") stamp(p, "#DC9515", 1, "ugly", clip = clip)

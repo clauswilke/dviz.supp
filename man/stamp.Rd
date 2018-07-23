@@ -5,19 +5,22 @@
 \alias{stamp_good}
 \alias{stamp_phantom}
 \alias{stamp_bad}
+\alias{stamp_wrong}
 \alias{stamp_ugly}
 \title{Stamp plots with a label, such as good, bad, or ugly.}
 \usage{
 stamp(p, color, alpha, label, family = dviz_font_family_bold,
-  fontface = "plain")
+  fontface = "plain", clip = "on")
 
-stamp_good(p)
+stamp_good(p, clip = "on")
 
-stamp_phantom(p)
+stamp_phantom(p, clip = "on")
 
-stamp_bad(p)
+stamp_bad(p, clip = "on")
 
-stamp_ugly(p)
+stamp_wrong(p, clip = "on")
+
+stamp_ugly(p, clip = "on")
 }
 \arguments{
 \item{p}{The plot to stamp}
@@ -31,6 +34,8 @@ stamp_ugly(p)
 \item{family}{Font family}
 
 \item{fontface}{Font face}
+
+\item{clip}{Should figure be clipped (default is "on")}
 }
 \description{
 Stamp plots with a label, such as good, bad, or ugly.
