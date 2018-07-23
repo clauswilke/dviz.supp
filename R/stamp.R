@@ -41,7 +41,7 @@ stamp_bad <- function(p, clip = "on") stamp(p, "#d02138", 1, "bad", clip = clip)
 
 #' @rdname stamp
 #' @export
-stamp_wrong <- function(p, clip = "on") stamp(p, "#d02138", 1, "wrong", clip = clip)
+stamp_wrong <- function(p, clip = "on") stamp(p, "#8E202C", 1, "wrong", clip = clip)
 
 #' @rdname stamp
 #' @export
