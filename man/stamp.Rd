@@ -5,7 +5,7 @@
 \alias{stamp_good}
 \alias{stamp_phantom}
 \alias{stamp_bad}
-\alias{stamp_sketchy}
+\alias{stamp_wrong}
 \alias{stamp_ugly}
 \title{Stamp plots with a label, such as good, bad, or ugly.}
 \usage{
@@ -18,7 +18,7 @@ stamp_phantom(p, clip = "on")
 
 stamp_bad(p, clip = "on")
 
-stamp_sketchy(p, clip = "on")
+stamp_wrong(p, clip = "on")
 
 stamp_ugly(p, clip = "on")
 }

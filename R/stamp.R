@@ -37,12 +37,12 @@ stamp_phantom <- function(p, clip = "on") stamp(p, "transparent", 0, "", clip = 
 
 #' @rdname stamp
 #' @export
-#stamp_bad <- function(p, clip = "on") stamp(p, "#d02138", 1, "bad", clip = clip)
-stamp_bad <- function(p, clip = "on") stamp(p, "#8E202C", 1, "bad", clip = clip)
+stamp_bad <- function(p, clip = "on") stamp(p, "#d02138", 1, "bad", clip = clip)
+#stamp_bad <- function(p, clip = "on") stamp(p, "#8E202C", 1, "bad", clip = clip)
 
 #' @rdname stamp
 #' @export
-stamp_sketchy <- function(p, clip = "on") stamp(p, "#d02138", 1, "sketchy", clip = clip)
+stamp_wrong <- function(p, clip = "on") stamp(p, "#8E202C", 1, "wrong", clip = clip)
 
 #' @rdname stamp
 #' @export
