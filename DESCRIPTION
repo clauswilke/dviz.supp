@@ -36,6 +36,7 @@ Collate:
   'dw_nominate.R'
   'flight_delays.R'
   'forensic_glass.R'
+  'fred_md.R'
   'gene_expression.R'
   'happy.R'
   'house_prices.R'
