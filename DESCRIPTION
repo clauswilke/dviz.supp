@@ -25,6 +25,7 @@ Collate:
   'Aus_athletes.R'
   'BA_degrees.R'
   'blue_jays.R'
+  'bridges.R'
   'bundestag.R'
   'CHIP_tax.R'
   'CO2_emissions.R'
@@ -59,5 +60,5 @@ Collate:
   'US_census.R'
   'US_regions.R'
   'women_parliaments.R'
-RoxygenNote: 6.0.1.9000
+RoxygenNote: 6.1.0
 Roxygen: list(markdown = TRUE)
