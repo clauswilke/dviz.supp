@@ -1,0 +1,1 @@
+Dow Jones Industrial Average downloaded from Yahoo Finance on 11/7/2018.
