@@ -97,10 +97,10 @@ draw_ocean <- function(cenlat = 40, cenlong = 15, xlim = c(-1.2, 1.2), ylim = c(
   # draw graticule
   df <- expand.grid(lat = c(seq(-90, 90, length.out = 100), NA), long = seq(-180, 150, by = 30))
   grat <- orthproj(df$lat, df$long, cenlat, cenlong, remove_back = TRUE)
-  lines(grat$x, grat$y, col = line_col, lwd = 0.5)
+  lines(grat$x, grat$y, col = line_col, lwd = lwd)
   df <- expand.grid(long = c(seq(-180, 180, length.out = 100), NA), lat = seq(-75, 75, by = 15))
   grat <- orthproj(df$lat, df$long, cenlat, cenlong, remove_back = TRUE)
-  lines(grat$x, grat$y, col = line_col, lwd = 0.5)
+  lines(grat$x, grat$y, col = line_col, lwd = lwd)
 }
 
 
