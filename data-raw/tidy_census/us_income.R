@@ -23,7 +23,7 @@ crs_hawaii <- "+proj=aea +lat_1=8 +lat_2=18 +lat_0=13 +lon_0=-157 +x_0=0 +y_0=0 
 # shapefiles from:
 # https://www.census.gov/geo/maps-data/data/cbf/cbf_counties.html
 us_counties_sp <- rgdal::readOGR(
-  dsn = here("data-raw", "tidy_census", "US_shapes"),
+  dsn = here::here("data-raw", "tidy_census", "US_shapes"),
   layer = "cb_2017_us_county_20m"
 )
 
@@ -90,6 +90,16 @@ st_crs(us_hawaii3) <- crs_lower48
 us_albers <- rbind(us_lower48, us_alaska2, us_hawaii2)
 us_albers2 <- rbind(us_lower48, us_alaska3, us_hawaii3)
 
+us_states_geoms <- list(
+  lower48 = us_lower48,
+  true_albers = us_states,
+  us_albers = us_albers,
+  albers_revised = us_albers2
+)
+
+devtools::use_data(us_states_geoms, overwrite = TRUE)
+
+ggplot(us_lower48) + geom_sf(fill = "#56B4E9", color = "grey30", size = 0.3, alpha = 0.5)
 ggplot(us_states) + geom_sf(fill = "#56B4E9", color = "grey30", size = 0.3, alpha = 0.5)
 ggplot(us_albers) + geom_sf(fill = "#56B4E9", color = "grey30", size = 0.3, alpha = 0.5)
 ggplot(us_albers2) + geom_sf(fill = "#56B4E9", color = "grey30", size = 0.3, alpha = 0.5)
