@@ -3,6 +3,8 @@
 export(align_legend)
 export(cvd_sim)
 export(cvd_sim2)
+export(draw_land)
+export(draw_ocean)
 export(dviz_font_family)
 export(dviz_font_family_bold)
 export(dviz_font_family_bold_condensed)

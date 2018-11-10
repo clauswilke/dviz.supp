@@ -72,7 +72,7 @@ df_dow %>% filter(date >= ymd("2009/01/01") & date <= ymd("2010/01/01")) %>%
   mutate(
     close_20d_ave = moving_ave(date, close, 20, center = FALSE),
     close_50d_ave = moving_ave(date, close, 50, center = FALSE),
-    close_100d_ave = moving_ave(date, close, 100, center = FALSE),
+    close_100d_ave = moving_ave(date, close, 100, center = FALSE)
   ) %>%
   ggplot(aes(date, close)) + 
   geom_line(aes(color = "closing"), size = .5) +
@@ -88,6 +88,27 @@ df_dow %>% filter(date >= ymd("2009/01/01") & date <= ymd("2010/01/01")) %>%
     ),
     breaks = c("closing", "20d", "50d", "100d"),
     labels = c("closing price", "20 day average", "50 day average", "100 day average")
+  ) + 
+  theme_minimal()
+
+# LOESS (locally estimated scatterplot smoothing) 
+
+df_dow %>% filter(date >= ymd("2009/01/01") & date <= ymd("2010/01/01")) %>%
+  mutate(
+    close_100d_ave = moving_ave(date, close, 100)
+  ) %>%
+  ggplot(aes(date, close)) + 
+  geom_line(aes(color = "closing"), size = .25) +
+  geom_line(aes(date, close_100d_ave, color = "100d"), size = .75, na.rm = TRUE) +
+  geom_smooth(aes(color = "smooth"), size = .75, na.rm = TRUE, se = FALSE) +
+  scale_color_manual(
+    values = c(
+      closing = "black", 
+      `100d` = "#d55e00",
+      smooth = "#0072b2"
+    ),
+    breaks = c("closing", "smooth", "100d"),
+    labels = c("closing price", "LOESS smoother", "100 day average")
   ) + 
   theme_minimal()
 
