@@ -80,7 +80,7 @@ draw_land <- function(coord, cenlat = 40, cenlong = 15, xlim = c(-1.2, 1.2), yli
 #' @rdname draw_land
 #' @export
 draw_ocean <- function(cenlat = 40, cenlong = 15, xlim = c(-1.2, 1.2), ylim = c(-1.2, 1.2),
-                       col = "#56B4E970", line_col = "grey30", lwd = 0.5) {
+                       col = "#56B4E950", line_col = "grey30", lwd = 0.5) {
   # setup plotting area
   par(mar = c(0, 0, 0, 0))
   par(oma = c(0, 0, 0, 0))

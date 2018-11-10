@@ -10,7 +10,7 @@ draw_land(coord, cenlat = 40, cenlong = 15, xlim = c(-1.2, 1.2),
   line_col = "black", lwd = 0.5)
 
 draw_ocean(cenlat = 40, cenlong = 15, xlim = c(-1.2, 1.2),
-  ylim = c(-1.2, 1.2), col = "#56B4E970", line_col = "grey30",
+  ylim = c(-1.2, 1.2), col = "#56B4E950", line_col = "grey30",
   lwd = 0.5)
 }
 \arguments{
