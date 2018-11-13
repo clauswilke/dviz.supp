@@ -34,6 +34,7 @@
 #' }
 #' gifski::save_gif(makeplot(), "world.gif", delay = 1/24, 500, 500)
 #' }
+#' @seealso [map_polys]
 #' @export
 draw_land <- function(coord, cenlat = 40, cenlong = 15, xlim = c(-1.2, 1.2), ylim = c(-1.2, 1.2),
                       col = "#E69F00B0", bg_col = "white", line_col = "black", lwd = 0.5) {

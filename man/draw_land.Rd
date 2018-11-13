@@ -59,3 +59,6 @@ makeplot <- function() {
 gifski::save_gif(makeplot(), "world.gif", delay = 1/24, 500, 500)
 }
 }
+\seealso{
+\link{map_polys}
+}
