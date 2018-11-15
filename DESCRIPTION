@@ -60,6 +60,7 @@ Collate:
   'plot_grid.R'
   'preprint_growth.R'
   'stamp.R'
+  'stat_sina.R'
   'tech_stocks.R'
   'themes.R'
   'tidy_census.R'
