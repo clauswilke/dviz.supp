@@ -6,6 +6,11 @@ library(ggplot2)
 
 options(tigris_use_cache = TRUE)
 
+##**********************
+## US states geometries
+##**********************
+
+
 ## projections
 # ESRI:102003
 # https://epsg.io/102003
@@ -90,24 +95,19 @@ st_crs(us_hawaii3) <- crs_lower48
 us_albers <- rbind(us_lower48, us_alaska2, us_hawaii2)
 us_albers2 <- rbind(us_lower48, us_alaska3, us_hawaii3)
 
-us_states_geoms <- list(
+US_states_geoms <- list(
   lower48 = us_lower48,
   true_albers = us_states,
   us_albers = us_albers,
   albers_revised = us_albers2
 )
 
-devtools::use_data(us_states_geoms, overwrite = TRUE)
-
-ggplot(us_lower48) + geom_sf(fill = "#56B4E9", color = "grey30", size = 0.3, alpha = 0.5)
-ggplot(us_states) + geom_sf(fill = "#56B4E9", color = "grey30", size = 0.3, alpha = 0.5)
-ggplot(us_albers) + geom_sf(fill = "#56B4E9", color = "grey30", size = 0.3, alpha = 0.5)
-ggplot(us_albers2) + geom_sf(fill = "#56B4E9", color = "grey30", size = 0.3, alpha = 0.5)
+devtools::use_data(US_states_geoms, overwrite = TRUE)
 
 
-##****************
-## Median income
-##****************
+##*****************************************
+## Median income, population density, etc.
+##*****************************************
 
 # get median income
 income_acs <- get_acs(
@@ -127,34 +127,15 @@ population_acs <- get_acs(
 
 income_acs <- left_join(income_acs, population_acs)
 
-left_join(us_albers2, income_acs) %>%
-  ggplot(aes(fill = population)) + 
-  geom_sf(color = "grey30", size = 0.3, alpha = 0.5) + 
-  scale_fill_viridis_c()
+US_income <- left_join(us_albers2, income_acs) %>%
+  mutate(
+    area = st_area(geometry)*1e-6, # area in square km
+    popdens = population/area
+  )
 
+devtools::use_data(US_income, overwrite = TRUE)
 
 library(cartogram)
-us_albers2_cartogram <- cartogram_cont(left_join(us_albers2, income_acs), 'population')
+US_income_cartogram <- cartogram_cont(US_income, 'population')
 
-p1 <- ggplot(left_join(us_albers2, income_acs), aes(fill = median_income)) + 
-  geom_sf(color = "grey30", size = 0.3, alpha = 0.7) + 
-  scale_fill_viridis_c()
-
-
-p2 <- ggplot(us_albers2_cartogram, aes(fill = median_income)) + 
-  geom_sf(color = "grey30", size = 0.3, alpha = 0.7) + 
-  scale_fill_viridis_c()
-
-cowplot::plot_grid(p1, p2, ncol = 1)
-
-library(statebins)
-filter(income_acs, name != "Puerto Rico") %>%
-ggplot(aes(state = name, fill = median_income)) +
-  geom_statebins(family = dviz.supp::dviz_font_family,
-                 lbl_size = 14/.pt) +
-  coord_equal() +
-  scale_fill_viridis_c() +
-  theme_statebins(base_family = dviz.supp::dviz_font_family)
-
-
-
+devtools::use_data(US_income_cartogram, overwrite = TRUE)

@@ -23,7 +23,7 @@ mproj <- rgdal::project(m, proj = "+proj=aea +lat_1=29.5 +lat_2=45.5 +lat_0=37.5
 wind_turbines$x <- mproj[,1]
 wind_turbines$y <- mproj[,2]
 
-lower48 <- st_as_sf(us_states_geoms$lower48)
+lower48 <- us_states_geoms$lower48
 ggplot(lower48) + 
   geom_sf(fill = "#56B4E9", color = "grey30", size = 0.3, alpha = 0.5) +
   geom_point(

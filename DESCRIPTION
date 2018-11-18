@@ -67,7 +67,8 @@ Collate:
   'titanic.R'
   'US_census.R'
   'US_regions.R'
-  'us_states_geoms.R'
+  'US_income.R'
+  'US_states_geoms.R'
   'wind_turbines.R'
   'women_parliaments.R'
 RoxygenNote: 6.1.0
