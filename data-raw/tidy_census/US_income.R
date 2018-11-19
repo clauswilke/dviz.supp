@@ -129,7 +129,7 @@ income_acs <- left_join(income_acs, population_acs)
 
 US_income <- left_join(us_albers2, income_acs) %>%
   mutate(
-    area = st_area(geometry)*1e-6, # area in square km
+    area = st_area(geometry), # area in m^2
     popdens = population/area
   )
 
@@ -231,7 +231,7 @@ income_counties_acs <- left_join(income_counties_acs, population_counties_acs)
 
 US_counties_income <- left_join(us_counties_albers2, income_counties_acs) %>%
   mutate(
-    area = st_area(geometry)*1e-6, # area in square km
+    area = st_area(geometry), # area in m^2
     popdens = population/area
   )
 
