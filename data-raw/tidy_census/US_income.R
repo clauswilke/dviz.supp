@@ -45,8 +45,8 @@ us_states <- as(us_states_sp, "sf") %>%
 us_lower48 <- filter(us_states, !GEOID %in% c("02", "15"))
 
 ## helper function to move geometries
-place_geometry <- function(geometry, position, scale = 1) {
-  (geometry - st_centroid(geometry)) * scale + 
+place_geometry <- function(geometry, position, scale = 1, centroid = st_centroid(geometry)) {
+  (geometry - centroid) * scale + 
     st_sfc(st_point(position))
 }
 
@@ -139,3 +139,104 @@ library(cartogram)
 US_income_cartogram <- cartogram_cont(US_income, 'population')
 
 devtools::use_data(US_income_cartogram, overwrite = TRUE)
+
+
+##*****************************************
+## Redo analysis at county level
+##*****************************************
+
+# geometries
+us_counties <- as(us_counties_sp, "sf") %>%
+  st_transform(crs_lower48) %>%
+  filter(STATEFP != "72") # remove Puerto Rico
+
+us_counties_lower48 <- filter(us_counties, !STATEFP %in% c("02", "15"))
+
+bb <- st_bbox(us_counties_lower48)
+
+us_counties_alaska <- filter(us_counties, STATEFP == "02")
+# Alaska scaled down
+us_counties_alaska2 <- st_transform(us_counties_alaska, crs_alaska)
+st_geometry(us_counties_alaska2) <- place_geometry(
+  st_geometry(us_counties_alaska2),
+  c(bb$xmin + 0.08*(bb$xmax - bb$xmin),
+    bb$ymin + 0.07*(bb$ymax - bb$ymin)),
+  scale = 0.35,
+  centroid = st_centroid(st_geometry(st_transform(us_alaska, crs_alaska)))
+)
+st_crs(us_counties_alaska2) <- crs_lower48
+
+# Alaska not scaled
+us_counties_alaska3 <- st_transform(us_counties_alaska, crs_alaska)
+st_geometry(us_counties_alaska3) <- place_geometry(
+  st_geometry(us_counties_alaska3),
+  #  c(bb$xmin - 0.2*(bb$xmax - bb$xmin),
+  #    bb$ymin + 0.4*(bb$ymax - bb$ymin))
+  c(bb$xmin + 0.2*(bb$xmax - bb$xmin),
+    bb$ymin - 0.13*(bb$ymax - bb$ymin)),
+  centroid = st_centroid(st_geometry(st_transform(us_alaska, crs_alaska)))
+)
+st_crs(us_counties_alaska3) <- crs_lower48
+
+
+us_counties_hawaii <- filter(us_counties, STATEFP == "15")
+us_counties_hawaii2 <- st_transform(us_counties_hawaii, crs_hawaii)
+st_geometry(us_counties_hawaii2) <- place_geometry(
+  st_geometry(us_counties_hawaii2),
+  c(bb$xmin + 0.3*(bb$xmax - bb$xmin),
+    bb$ymin + 0.*(bb$ymax - bb$ymin)),
+  centroid = st_centroid(st_geometry(st_transform(us_hawaii, crs_hawaii)))
+)
+st_crs(us_counties_hawaii2) <- crs_lower48
+
+us_counties_hawaii3 <- st_transform(us_counties_hawaii, crs_hawaii)
+st_geometry(us_counties_hawaii3) <- place_geometry(
+  st_geometry(us_counties_hawaii3),
+  c(bb$xmin + 0.7*(bb$xmax - bb$xmin),
+    bb$ymin - 0.2*(bb$ymax - bb$ymin)),
+  centroid = st_centroid(st_geometry(st_transform(us_hawaii, crs_hawaii)))
+)
+st_crs(us_counties_hawaii3) <- crs_lower48
+
+us_counties_albers <- rbind(us_counties_lower48, us_counties_alaska2, us_counties_hawaii2)
+us_counties_albers2 <- rbind(us_counties_lower48, us_counties_alaska3, us_counties_hawaii3)
+
+US_counties_geoms <- list(
+  lower48 = us_counties_lower48,
+  true_albers = us_counties,
+  us_albers = us_counties_albers,
+  albers_revised = us_counties_albers2
+)
+
+devtools::use_data(US_counties_geoms, overwrite = TRUE)
+
+
+# get median income
+income_counties_acs <- get_acs(
+  geography = "county", year = 2015,
+  variables = "B19013_001", geometry = FALSE
+) %>%
+  rename(name = NAME, median_income = estimate, median_income_moe = moe) %>%
+  select(-variable)
+
+# get population
+population_counties_acs <- get_acs(
+  geography = "county", year = 2015,
+  variables = "B01003_001", geometry = FALSE
+) %>%
+  rename(name = NAME, population = estimate) %>% 
+  select(-variable, -moe)
+
+income_counties_acs <- left_join(income_counties_acs, population_counties_acs)
+
+US_counties_income <- left_join(us_counties_albers2, income_counties_acs) %>%
+  mutate(
+    area = st_area(geometry)*1e-6, # area in square km
+    popdens = population/area
+  )
+
+devtools::use_data(US_counties_income, overwrite = TRUE)
+
+# not run, too slow
+#US_counties_income_cartogram <- cartogram_cont(US_counties_income, 'population')
+#devtools::use_data(US_counties_income_cartogram, overwrite = TRUE)

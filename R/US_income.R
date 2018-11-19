@@ -4,7 +4,8 @@
 #' population density for each state, as well as the state's geometry. The data
 #' frame `us_income_cartogram` holds the same information but the geometries
 #' have been adjusted so that their area is proportional to the population
-#' number of the state.
+#' number of the state. The data frame `us_counties_income` provides county-level
+#' data.
 #' 
 #' Data was obtained from the US Census, 2015 ACS.
 #' @examples
@@ -41,9 +42,17 @@
 #'   coord_equal() +
 #'   scale_fill_viridis_c() +
 #'   theme_statebins(base_family = dviz.supp::dviz_font_family)
+#'   
+#' ggplot(US_counties_income, aes(fill = log(as.numeric(popdens)))) + 
+#'   geom_sf(color = NA) +
+#'   coord_sf(datum = NA) +
+#'   scale_fill_viridis_c(option = "A", name = "popdens") + theme_map() +
+#'   theme(legend.position = "bottom")
 "US_income"
 
 #' @rdname US_income
 "US_income_cartogram"
 
+#' @rdname US_income
+"US_counties_income"
 
