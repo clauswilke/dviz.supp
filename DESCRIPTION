@@ -31,6 +31,7 @@ Collate:
   'bridges.R'
   'bundestag.R'
   'CHIP_tax.R'
+  'CO2.R'
   'CO2_emissions.R'
   'correlation_examples.R'
   'corruption.R'
