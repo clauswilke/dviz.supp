@@ -105,7 +105,19 @@ draw_ocean <- function(cenlat = 40, cenlong = 15, xlim = c(-1.2, 1.2), ylim = c(
 }
 
 
-# project lat/long to x-y (0, 1 range) in orthographic projection.
+#' Project lat/long to x-y in orthographic projection.
+#' 
+#' This function projects latitude/longitude to an x--y plane (with ranges -1 to 1) using
+#' an orthographic projection. It also determines whether points are in the front or at the
+#' back of the globe, and it can remove the back.
+#' 
+#' @param lat Vector of latitudes, in degrees.
+#' @param long Vector of longitudes, in degrees
+#' @param cenlat Center latitude of projected earth.
+#' @param cenlong Center longitude of projected earth.
+#' @param remove_back Boolean indicating whether the back of the globe
+#'   should be removed.
+#' @export
 orthproj <- function(lat, long, cenlat, cenlong, remove_back = FALSE){
   # convert degrees to radians
   d2r <- pi/180
