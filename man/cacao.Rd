@@ -3,16 +3,30 @@
 \docType{data}
 \name{cacao}
 \alias{cacao}
+\alias{cacao_mcmc}
+\alias{cacao_small}
 \title{Ratings of chocolate bars}
 \format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 1795 rows and 9 columns.}
 \usage{
 cacao
+
+cacao_mcmc
+
+cacao_small
 }
 \description{
 Ratings of almost 1800 bars of chocolate, collected by Brady Brelinski,
-Founding Member of the Manhattan Chocolate Society.
+Founding Member of the Manhattan Chocolate Society. The data frame \code{cacao} provides the
+entire ratings database and the data frame \code{cacao_small} provides a reduced ratings dataset
+that holds only ratings for locations Switzerland, Canada, Austria, U.S.A., Belgium, and Peru.
+The object \code{cacao_mcmc} provides the result from a \code{rstanarm::stan_glm()} call
+[specifically \code{stan_glm(rating ~ location, prior = student_t(3, 0, 1))}]
+run on the \code{cacao_small} data frame.
 }
 \examples{
+# Examples for full data set
+library(tidyverse)
+
 cacao \%>\% 
   mutate(location = fct_lump(location, 20)) \%>\%
   mutate(location = fct_relevel(location, "U.S.A.")) -> cacao_lumped
@@ -37,6 +51,32 @@ ggplot(cacao_lumped, aes(x = reorder(location, rating), y = rating)) +
   ) +
   coord_flip() +
   theme_dviz_grid()
+  
+# Examples for stan_glm() result
+library(emmeans)
+library(tidybayes)
+library(ggridges)
+
+cacao_mcmc \%>\%
+  emmeans( ~ location) \%>\%
+  gather_emmeans_draws() \%>\%
+  ggplot(aes(.value, reorder(location, .value))) +
+  geom_density_ridges_gradient(
+    aes(fill = stat(quantile)),
+    color = NA,
+    quantiles = c(0.005, 0.025, 0.1, 0.9, 0.975, 0.995),
+    calc_ecdf = TRUE,
+    scale = 0.9,
+    rel_min_height = 0.005
+  ) +
+  stat_pointintervalh(.width = c(.8, .95, .99)) +
+  scale_fill_manual(
+    name = NULL,
+    values = c(desaturate(lighten("#0072B2", c(.7, .5, .3, .1, .3, .5, .7)), .5)),
+    breaks = c(4, 3, 2, 1),
+    labels = c("80\%", "95\%", "99\%", ">99\%") 
+  ) +
+  theme_dviz_hgrid()
 }
 \references{
 Manhattan Chocolate Society, \url{http://flavorsofcacao.com}
