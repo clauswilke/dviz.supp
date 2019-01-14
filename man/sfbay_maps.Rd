@@ -4,7 +4,7 @@
 \name{sfbay_maps}
 \alias{sfbay_maps}
 \title{Maps of the bay area in California}
-\format{An object of class \code{list} of length 5.}
+\format{An object of class \code{list} of length 7.}
 \usage{
 sfbay_maps
 }
