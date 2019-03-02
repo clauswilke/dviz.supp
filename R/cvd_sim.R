@@ -23,7 +23,7 @@
 #' @importFrom cowplot plot_grid
 #' @importFrom colorblindr edit_colors
 #' @export
-cvd_sim <- function(p, severity = 1, scale = 1, hjust = 0, vjust = 1,
+cvd_sim <- function(p, severity = 1, scale = 0.9, hjust = 0, vjust = 1,
                     label_x = 0, label_y = 1, label_size = 14, label_fontface = "plain")
 {
   deut <- function(c) deutan(c, severity)
