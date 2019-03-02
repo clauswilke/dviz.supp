@@ -12,9 +12,10 @@
 #' @param hjust,vjust Label justification
 #' @examples
 #' 
-#' viridis_scale <- gg_color_gradient(plot_margin = margin(12, 0, 0, 0),
-#'                                    ymargin = 0.05) + 
-#'                    scale_fill_viridis_c()
+#' viridis_scale <- gg_color_gradient(
+#'   plot_margin = margin(12, 0, 0, 0),
+#'   ymargin = 0.05
+#' ) + scale_fill_viridis_c()
 #' 
 #' cvd_sim(viridis_scale)
 #' cvd_sim2(viridis_scale)
@@ -22,8 +23,8 @@
 #' @importFrom cowplot plot_grid
 #' @importFrom colorblindr edit_colors
 #' @export
-cvd_sim <- function(p, severity = 1, scale = 0.9, hjust = 0, vjust = 1,
-                    label_x = 0.05, label_y = 0.95, label_size = 12, label_fontface = "plain")
+cvd_sim <- function(p, severity = 1, scale = 1, hjust = 0, vjust = 1,
+                    label_x = 0, label_y = 1, label_size = 14, label_fontface = "plain")
 {
   deut <- function(c) deutan(c, severity)
   p1 <- edit_colors(p, deut)
@@ -34,17 +35,28 @@ cvd_sim <- function(p, severity = 1, scale = 0.9, hjust = 0, vjust = 1,
   trit <- function(c) tritan(c, severity)
   p3 <- edit_colors(p, trit)
   
-  plot_grid(p, p1, p2, p3, scale = scale, hjust = hjust, vjust = vjust,
-            labels = c("original", "deuteranomaly", "protanomaly", "tritanomaly"),
-            label_x = label_x, label_y = label_y, label_size = label_size,
-            label_fontface = label_fontface)
+  plot_grid(
+    p, NULL, p1,
+    NULL, NULL, NULL,
+    p2, NULL, p3,
+    scale = 1, hjust = hjust, vjust = vjust,
+    labels = c(
+      "original", "", "deuteranomaly",
+      "", "", "",
+      "protanomaly", "", "tritanomaly"
+    ),
+    rel_widths = c(scale, 1-scale, scale),
+    rel_heights = c(scale, 1-scale, scale),
+    label_x = label_x, label_y = label_y, label_size = label_size,
+    label_fontface = label_fontface
+  )
 }
 
 
 #' @rdname cvd_sim
 #' @export
 cvd_sim2 <- function(p, severity = 1, scale = 0.9, hjust = 0, vjust = 1,
-                     label_x = 0.05, label_y = 0.95, label_size = 12, label_fontface = "plain")
+                     label_x = 0, label_y = 1, label_size = 14, label_fontface = "plain")
 {
   deut <- function(c) deutan(c, severity)
   p1 <- edit_colors(p, deut)
@@ -58,8 +70,18 @@ cvd_sim2 <- function(p, severity = 1, scale = 0.9, hjust = 0, vjust = 1,
   desat <- function(c) desaturate(c, severity)
   p4 <- edit_colors(p, desat)
   
-  plot_grid(p1, p2, p3, p4, scale = scale, hjust = hjust, vjust = vjust,
-            labels = c("deuteranomaly", "protanomaly", "tritanomaly", "desaturated"),
-            label_x = label_x, label_y = label_y, label_size = label_size,
-            label_fontface = label_fontface)
+  plot_grid(
+    p1, NULL, p2,
+    NULL, NULL, NULL,
+    p3, NULL, p4,
+    scale = 1, hjust = hjust, vjust = vjust,
+    labels = c(
+      "deuteranomaly", "", "protanomaly",
+      "", "", "",
+      "tritanomaly", "", "desaturated"),
+    rel_widths = c(scale, 1-scale, scale),
+    rel_heights = c(scale, 1-scale, scale),
+    label_x = label_x, label_y = label_y, label_size = label_size,
+    label_fontface = label_fontface
+  )
 }

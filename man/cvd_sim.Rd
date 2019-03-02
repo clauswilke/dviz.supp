@@ -5,12 +5,12 @@
 \alias{cvd_sim2}
 \title{Make combined figure of color-vision deficiency simulations}
 \usage{
-cvd_sim(p, severity = 1, scale = 0.9, hjust = 0, vjust = 1,
-  label_x = 0.05, label_y = 0.95, label_size = 12,
+cvd_sim(p, severity = 1, scale = 1, hjust = 0, vjust = 1,
+  label_x = 0, label_y = 1, label_size = 14,
   label_fontface = "plain")
 
 cvd_sim2(p, severity = 1, scale = 0.9, hjust = 0, vjust = 1,
-  label_x = 0.05, label_y = 0.95, label_size = 12,
+  label_x = 0, label_y = 1, label_size = 14,
   label_fontface = "plain")
 }
 \arguments{
@@ -34,9 +34,10 @@ only shows the color-blind simulated versions and adds a desaturated version als
 }
 \examples{
 
-viridis_scale <- gg_color_gradient(plot_margin = margin(12, 0, 0, 0),
-                                   ymargin = 0.05) + 
-                   scale_fill_viridis_c()
+viridis_scale <- gg_color_gradient(
+  plot_margin = margin(12, 0, 0, 0),
+  ymargin = 0.05
+) + scale_fill_viridis_c()
 
 cvd_sim(viridis_scale)
 cvd_sim2(viridis_scale)
