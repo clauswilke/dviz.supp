@@ -5,7 +5,7 @@
 #' 
 #' @source 
 #' M. L. Paff, B. R. Jack, B. L. Smith, J. J. Bull, C. O. Wilke (2018). Combinatorial
-#' approaches to viral attenuation. bioRxiv 299180. http://dx.doi.org/10.1101/299180
+#' approaches to viral attenuation. bioRxiv 299180. https://doi.org/10.1101/299180
 #' @examples 
 #' gene_expression %>% 
 #'   filter(strain == "phi9v2" & background == "wt") %>%
