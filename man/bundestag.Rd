@@ -9,7 +9,7 @@
 bundestag
 }
 \description{
-Composition of the 8th Bundestag, from 1976–1980. The \code{party} and \code{seat} columns should be self-explanatory.
+Composition of the 8th Bundestag, from 1976-1980. The \code{party} and \code{seat} columns should be self-explanatory.
 The \code{colors_original} column holds the traditional colors used to represent these parties, and the \code{colors}
 column holds a variation of these colors that are less saturated.
 }

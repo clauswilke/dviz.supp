@@ -7,19 +7,17 @@ Description: This package provides supporting materials for Claus Wilke's data v
 URL: https://github.com/clauswilke/dviz.supp
 Depends:
     R (>= 3.5.0),
-    cowplot (> 0.9.9),
+    cowplot (>= 1.0.0),
     colorspace (>= 1.4-0),
     colorblindr (>= 0.1.0),
     dplyr (>= 0.7.4)
 Imports:
     ggplot2 (>= 2.2.1),
-    gtable
+    gtable,
+    rstanarm
 Suggests:
     tidyr,
     knitr
-Remotes:
-    wilkelab/cowplot,
-    clauswilke/colorblindr
 License: MIT + file LICENSE
 LazyData: true
 VignetteBuilder: knitr

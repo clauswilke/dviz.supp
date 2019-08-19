@@ -7,7 +7,7 @@
 \format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 18855 rows and 1 columns.}
 \source{
 Clauset, A., C. R. Shalizi, and M. E. J. Newman. 2009.
-“Power-Law Distributions in Empirical Data.” SIAM Review 51:661–703.
+"Power-Law Distributions in Empirical Data." SIAM Review 51:661-703.
 }
 \usage{
 Moby_Dick
