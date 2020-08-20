@@ -1,5 +1,5 @@
 # dviz.supp
-Supporting materials for Claus Wilke's [data visualization book.](http://serialmentor.com/dataviz/)
+Supporting materials for Claus Wilke's [data visualization book.](https://clauswilke.com/dataviz/)
 
 ## Disclaimer
 
